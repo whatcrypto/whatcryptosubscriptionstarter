@@ -3,12 +3,12 @@
 
 import Pricing from '@/app/components/ui/Pricing/Pricing';
 import { api } from "@/utils/api";
-import { createClient } from '@/utils/supabase/server';
+import { createClient } from '@/app/utils/supabase/server';
 import {
   getProducts,
   getSubscription,
   getUser
-} from '@/utils/supabase/queries';
+} from '@/app/utils/supabase/queries';
 
 export default async function PricingPage() {
   const supabase = createClient();
