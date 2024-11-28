@@ -6,35 +6,39 @@ import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
 
-const title = 'Next.js Subscription Starter';
-const description = 'Brought to you by Vercel, Stripe, and Supabase.';
+
+
+
 
 export const metadata: Metadata = {
-  metadataBase: new URL(getURL()),
-  title: title,
-  description: description,
-  openGraph: {
-    title: title,
-    description: description
-  }
+  title: 'WhatCrypto - Cryptocurrency Dashboard',
+  description: 'Track and analyze cryptocurrency prices, trends, and your portfolio in real-time',
 };
 
-export default async function RootLayout({ children }: PropsWithChildren) {
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body className="bg-black">
-        <Navbar />
-        <main
-          id="skip"
-          className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
-        >
-          {children}
-        </main>
-        <Footer />
-        <Suspense>
-          <Toaster />
-        </Suspense>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <div className="relative min-h-screen flex flex-col bg-background">
+            <Header />
+            <main className="flex-1 container max-w-screen-2xl mx-auto px-4 py-6">
+              {children}
+            </main>
+            <Toaster />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
 }
+import './globals.css';
+import { ThemeProvider } from '@/components/theme-provider';
+import { Header } from '@/components/layout/header';
+
+
