@@ -1,7 +1,7 @@
 "use client";
 
 
-import Pricing from '@/components/ui/Pricing/Pricing';
+import Pricing from '@/app/components/ui/Pricing/Pricing';
 import { api } from "@/utils/api";
 import { createClient } from '@/utils/supabase/server';
 import {

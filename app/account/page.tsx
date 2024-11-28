@@ -1,6 +1,6 @@
-import CustomerPortalForm from '@/components/ui/AccountForms/CustomerPortalForm';
-import EmailForm from '@/components/ui/AccountForms/EmailForm';
-import NameForm from '@/components/ui/AccountForms/NameForm';
+import CustomerPortalForm from '@/app/components/ui/AccountForms/CustomerPortalForm';
+import EmailForm from '@/app/components/ui/AccountForms/EmailForm';
+import NameForm from '@/app/components/ui/AccountForms/NameForm';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/utils/supabase/server';
 import {
