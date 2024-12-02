@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Bearded Theme HC Midnight Void",
+    "git.suggestSmartCommit": "false",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": "false",
+    "workbench.layoutControl.enabled": "false",
+    "terminal.explorerKind": "both",
+    "terminal.integrated.altClickMovesCursor": false,
+    "terminal.integrated.allowMnemonics": true,
+    "editor.mouseWheelZoom": true,
+    "cursor.aipreview.enabled": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "typescript.suggest.autoImports": true,
+"typescript.format.enable": true,
+"typescript.preferences.organizeImports": {"typeOrder": "auto"},
+"editor.acceptSuggestionOnEnter": "smart"
+}

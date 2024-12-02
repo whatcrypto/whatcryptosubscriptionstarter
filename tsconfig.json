@@ -15,7 +15,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/config/*": ["./config/*"],
+      "@/db/*": ["./config/db/*"]
     },
     "incremental": true,
     "plugins": [

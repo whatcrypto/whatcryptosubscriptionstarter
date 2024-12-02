@@ -1,13 +1,10 @@
+import { redirect } from 'next/navigation';
+
 import CustomerPortalForm from '@/components/ui/AccountForms/CustomerPortalForm';
 import EmailForm from '@/components/ui/AccountForms/EmailForm';
 import NameForm from '@/components/ui/AccountForms/NameForm';
-import { redirect } from 'next/navigation';
+import { getSubscription, getUser, getUserDetails } from '@/utils/supabase/queries';
 import { createClient } from '@/utils/supabase/server';
-import {
-  getUserDetails,
-  getSubscription,
-  getUser
-} from '@/utils/supabase/queries';
 
 export default async function Account() {
   const supabase = createClient();
